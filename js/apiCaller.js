@@ -23,6 +23,7 @@ $(document).ready(function() {
         $('.temperature').text(data.responseJSON.temp);
         $('img').attr("src", 'images/' + data.responseJSON.outlook + '.svg');
         $('#icon').removeClass().addClass(data.responseJSON.outlook);
+        $('body').removeClass().addClass(data.responseJSON.outlook + '_wallpaper');
       }
     });
   });
