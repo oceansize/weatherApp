@@ -18,6 +18,13 @@
       var apiData = ["London", "Paris"];
       var temperature = 22;
       var weatherIcon = 'snow';
+      var data = $.ajax({
+        dataType: "jsonp",
+        url:  'http://weather-api.herokuapp.com/cities',
+        success: function(response ) {
+          console.log( response ); // server response
+        }
+      });
       $.each(apiData, function(index, city) {
         $('.cities').append(
           $('<option></option>').val(city).html(city + " ⌄")
