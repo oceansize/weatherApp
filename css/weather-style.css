@@ -5,8 +5,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: rgba(255,255,255,1);
   padding-top: 3em;
+  background-size: cover;
 }
-
 
 main {
   background-color: rgba(255,255,255,.25);
@@ -40,13 +40,16 @@ img {
   content: "º";
 }
 
+.default_style {
+  background-color: #b6d8ec;
+}
+
 .sunny {
   background-color: #f88d25;
 }
 
 .sunny_wallpaper {
   background-image: url("../images/wallpapers/sunny.jpg");
-  background-size: cover;
 }
 
 .snow {
@@ -55,7 +58,6 @@ img {
 
 .snow_wallpaper {
   background-image: url("../images/wallpapers/snow.jpg");
-  background-size: cover;
 }
 
 .cloudy {
@@ -64,7 +66,6 @@ img {
 
 .cloudy_wallpaper {
   background-image: url("../images/wallpapers/cloudy.jpg");
-  background-size: cover;
 }
 
 .rain {
@@ -73,7 +74,6 @@ img {
 
 .rain_wallpaper {
   background-image: url("../images/wallpapers/rain.jpg");
-  background-size: cover;
 }
 
 select {
@@ -91,10 +91,4 @@ select {
 
 select:focus {
   outline: none;
-}
-
-.shadow {
-  -webkit-box-shadow: 0px 0px 6px 3px #dfdfdf;
-     -moz-box-shadow: 0px 0px 6px 3px #dfdfdf;
-          box-shadow: 0px 0px 6px 3px #dfdfdf;
 }
